@@ -3,6 +3,8 @@
 docker stop $(docker ps -q)
 
 docker build -t $1 .
+
+mkdir myapp
  
 docker run -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v myapp:/project/amproject -p 8000:8000 $1
 
