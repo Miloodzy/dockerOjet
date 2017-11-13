@@ -18,7 +18,7 @@ ADD ionic.sh /
 #RUN cd /project/amproject ; ojet serve & 
 #RUN /ionic.sh
 
-EXPOSE 8001
+EXPOSE 8000
 CMD cd amproject && ojet serve
 
 #VOLUME ["/project/myapp"] 
