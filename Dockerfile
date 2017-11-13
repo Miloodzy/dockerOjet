@@ -21,4 +21,4 @@ ADD ionic.sh /
 EXPOSE 8000
 CMD cd amproject && ojet serve
 
-#VOLUME ["/project/myapp"] 
+VOLUME ["/project/amproject"] 
